@@ -1,0 +1,14 @@
+0000    add REGc, REGa, REGb    c = a + b
+0001    inc REGa                a = a + 1
+0010    dec REGa                a = a - 1
+0011    sub REGc, REGa, REGb    c = a - b
+0100    and REGc, REGa, REGb    c = a & b
+0101    or  REGc, REGa, REGb    c = a | b
+0110    xor REGc, REGa, REGb    c = a xor b
+0111    xnor REGc, REGa, REGb   c = !(a xor b)
+1000    not Rega                a = !a
+1001    slf REGa, N             a = a << N
+1010    cmp REGa, REGb          (a & b)? 1 : 0
+
+1011 str ADDR, REGa
+1100 ldr REGa, ADDR
